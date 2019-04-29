@@ -1,4 +1,4 @@
-Simple resource, der matcher folks penge, våben, inventory osv, med sidste sidste gang de leavet, også skriver den præcis hvad folk har mistet på discord.
+Simple resource, der gemmer folks penge, inventory osv, når folk leaver og matcher når personen joiner igen, også sender den en besked på discord, hvis personen har fået et rollback med præcis hvad personen har mistet.
 
 **Preview:**
 <br/><img width='50%' src="https://i.gyazo.com/218267ac9e92ebc844bdbdfe72ad1535.png">
