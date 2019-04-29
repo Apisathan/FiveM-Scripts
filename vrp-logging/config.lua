@@ -12,5 +12,6 @@ cfg.Prefix = "[SAFECLOSE]"
 cfg.ServerName = "TITLE ^3Igang med at %reason"
 cfg.Restart = "genstarte!"
 cfg.Close = "lukke!"
+cfg.webhook = "WEBHOOK"
 
 return cfg

@@ -5,9 +5,6 @@
 -- Time: 18:33
 -- Github: https://github.com/Apisathan/FiveM-Scripts
 --
-
-local webhook = "WEBHOOK"
-
 MySQL = module("vrp_mysql", "MySQL")
 
 MySQL.createCommand("vRP/get_depositOnLogin","SELECT depositOnLogin FROM vrp_user_moneys WHERE user_id = @user_id")
@@ -165,7 +162,7 @@ AddEventHandler("vRP:playerSpawn",function(user_id,source,last_login)
 
                         MySQL.query("vRP/create_rollback", {user_id = user_id, before_wallet = rows[1].wallet, after_wallet = wallet, before_bank = rows[1].bank, after_bank = bank, before_weapons = ibweapons, after_weapons = iaweapons, before_inventory = ibinventory, after_inventory = iainventory})
 
-                        PerformHttpRequest(webhook, function(err, text, headers) end, 'POST', json.encode(
+                        PerformHttpRequest(cfg.webhook, function(err, text, headers) end, 'POST', json.encode(
                             {
                                 username = "Server "..GetConvar("servernumber", "0"),
                                 content = "Spiller: "..user_id.." har muligvis fået rollback",
