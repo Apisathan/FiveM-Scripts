@@ -1,9 +1,9 @@
 --
 -- Created by IntelliJ IDEA.
--- User: Sling
+-- User: Apisathan
 -- Date: 10-03-2019
 -- Time: 02:30
--- Made for CiviliansNetwork
+-- Github: https://github.com/Apisathan/FiveM-Scripts
 --
 excfg = {
     groups = {

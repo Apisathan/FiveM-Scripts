@@ -1,9 +1,9 @@
 --
 -- Created by IntelliJ IDEA.
--- User: Sling
+-- User: Apisathan
 -- Date: 11-01-2019
 -- Time: 20:22
--- Made for CiviliansNetwork
+-- Github: https://github.com/Apisathan/FiveM-Scripts
 --
 resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
 

@@ -1,9 +1,9 @@
 --
 -- Created by IntelliJ IDEA.
--- User: Sling
+-- User: Apisathan
 -- Date: 11-01-2019
 -- Time: 20:20
--- Made for CiviliansNetwork
+-- Github: https://github.com/Apisathan/FiveM-Scripts
 --
 
 local Tunnel = module("vrp", "lib/Tunnel")
