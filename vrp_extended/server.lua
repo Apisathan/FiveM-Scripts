@@ -18,7 +18,6 @@ function vRPex.updateInventory(user_id,inventory,weight)
     vRPclient.setInventory(-1,{user_id,inventory,weight})
 end
 function vRPex.updateMoney(user_id,bank,wallet)
-    print(bank,wallet)
     users[user_id].bank=bank
     users[user_id].wallet=wallet
     vRPclient.setUsers(-1,{users})
