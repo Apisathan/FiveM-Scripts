@@ -12,13 +12,6 @@ Tunnel.bindInterface("vrp_extended",vRPsb)
 local userid = 0
 local users = {}
 
-function loadAnimDict( dict )
-    while ( not HasAnimDictLoaded( dict ) ) do
-        RequestAnimDict( dict )
-        Citizen.Wait( 5 )
-    end
-end
-
 function vRPsb.setUserId(user_id)
     userid = user_id
 end
