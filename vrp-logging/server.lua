@@ -178,15 +178,6 @@ AddEventHandler("vRP:playerSpawn",function(user_id,source,last_login)
                 end)
             end
         end)
-        Citizen.Wait(100)
-        MySQL.query("vRP/get_depositOnLogin", {user_id = user_id}, function(rows, affected)
-            if #rows > 0 then
-                if rows[1].depositOnLogin > 0 then
-                    vRP.giveBankMoney({user_id,tonumber(rows[1].depositOnLogin)})
-                    MySQL.query("vRP/set_depositOnLogin", {user_id = user_id, deposit = 0})
-                end
-            end
-        end)
     end
 end)
 
@@ -225,60 +216,3 @@ function saveUser(user_id)
         end)
     end
 end
-
-function saveAllUsers()
-    local stoppedmsg = vRP.getServerStatus()
-    local users = vRP.getUsers({})
-    print(cfg.Prefix.." Vent venligst med at lukke serveren")
-    for k,v in pairs(users) do
-        if v ~= nil then
-            DropPlayer(v,cfg.Prefix.." Serveren er igang med at "..stoppedmsg)
-            print(cfg.Prefix.." "..k.." blev smidt ud")
-            Wait(500)
-        end
-    end
-    print(cfg.Prefix.." Udsmidning færdig, du kan nu lukke serveren!")
-end
-
-AddEventHandler('rconCommand', function(commandName, args)
-    if commandName == "safestop" then
-        CancelEvent()
-        if args[1] == "restart" or args[1] == "close" then
-            ExecuteCommand("sv_maxClients 1")
-            local servername = cfg.ServerName:gsub("%%number", GetConvar("servernumber", 0))
-            local type = ""
-            if args[1] == "restart" then
-                servername = servername:gsub("%%reason", cfg.Restart)
-                type = "Genstarter"
-                vRP.setServerStatus({cfg.Restart})
-            elseif args[1] == "close" then
-                servername = servername:gsub("%%reason", cfg.Close)
-                type = "Lukker"
-                vRP.setServerStatus({cfg.Close})
-            end
-            ExecuteCommand('sv_hostname "'..servername..'"')
-            print(cfg.Prefix.." "..type.." om 10 minutter")
-            TriggerClientEvent("chatMessage", -1, "^4"..cfg.Prefix.." ^3Serveren "..string.lower(type).." om 10 minutter")
-            SetTimeout(300000, function()
-                print(cfg.Prefix.." "..type.." om 5 minutter")
-                TriggerClientEvent("chatMessage", -1, "^4"..cfg.Prefix.." ^3Serveren "..string.lower(type).." om 5 minutter")
-                SetTimeout(120000, function()
-                    TriggerClientEvent("chatMessage", -1, "^4"..cfg.Prefix.." ^3Serveren "..string.lower(type).." om 3 minutter")
-                    print(cfg.Prefix.." "..type.." om 3 minutter")
-                    SetTimeout(120000, function()
-                        TriggerClientEvent("chatMessage", -1, "^4"..cfg.Prefix.." ^3Serveren "..string.lower(type).." om 1 minut")
-                        print(cfg.Prefix.." "..type.." om 1 minutter")
-                        SetTimeout(30000, function()
-                            TriggerClientEvent("chatMessage", -1, "^4"..cfg.Prefix.." ^3Serveren "..string.lower(type).." om 30 sekunder")
-                            print(cfg.Prefix.." "..type.." om 30 sekunder")
-                            SetTimeout(30000, function()
-                                print(cfg.Prefix.." Påbegynder udsmidning af spillere!")
-                                saveAllUsers()
-                            end)
-                        end)
-                    end)
-                end)
-            end)
-        end
-    end
-end)
