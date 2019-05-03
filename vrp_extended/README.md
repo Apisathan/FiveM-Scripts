@@ -35,3 +35,11 @@ end
 ```
 
 <b>Kode:</b> vRPex.updateInventory({user_id,data.inventory,vRP.getInventoryWeight(user_id)})
+
+<b>Hvordan bruger jeg det?</b>
+<ul>
+  <li>vRPex = Proxy.getInterface("vrp_extended") (Øverste i filen)</li>
+  <li>local job = vRP.getUser().job (Så får du dit job)</li>
+</ul>
+
+
