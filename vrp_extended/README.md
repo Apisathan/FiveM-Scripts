@@ -22,6 +22,16 @@ vrp_extended, gør så man kan se inventory, job og penge client sided på alle 
   <li>http://prntscr.com/nj94xl</li>
   <li>http://prntscr.com/nj9573</li>
   <li>http://prntscr.com/nj95ao</li>
+  <li>Smid nedenstående function ind også lige over clearInventory functionen, hvis du ikke allerede har den.</li>
 </ul>
+
+```
+function vRP.getInventory(user_id)
+  local data = vRP.getUserDataTable(user_id)
+  if data then
+    return data.inventory
+  end
+end
+```
 
 <b>Kode:</b> vRPex.updateInventory({user_id,data.inventory,vRP.getInventoryWeight(user_id)})
