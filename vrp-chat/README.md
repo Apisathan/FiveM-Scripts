@@ -17,4 +17,4 @@ Når normale folk skriver i OOC, så det kun dem selv og staff der kan se det, h
 **Installation i [system]/chat/sv_chat.lua:**
 <br/><img width='100%' src="https://i.gyazo.com/9deb2f0612c4c49ea15a55fe015b1dde.png">
 
-**Kode:** ```TriggerEvent("chat_message",source,author,message)```
+**Kode:** ```TriggerEvent("vrp-chat:chat_message",source,author,message)```
