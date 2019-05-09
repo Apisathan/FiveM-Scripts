@@ -4,7 +4,7 @@ Når normale folk skriver i OOC, så det kun dem selv og staff der kan se det, h
 <ul>
   <li><b>/r [id] [besked]</b>: kan også bruges hvis staff bare skal sende en besked til en person.</li>
   <li><b>/ooc [besked]</b>: Kan bruges af staff, hvis det en besked alle skal have.</li>
-  <li><b>/pk og /ck [besked]</b>: Kan bruges af normale spillere. (De skal slåes fra i config) **BEMÆRK:** Personens ID der skriver commanden er skjult, husk og ændrer webhook i config, for at kunne se id'et</li>
+  <li><b>/pk og /ck [besked]</b>: Kan bruges af normale spillere. (De skal slåes fra i config) <b>BEMÆRK:</b> Personens ID der skriver commanden er skjult, husk og ændrer webhook i config, for at kunne se id'et</li>
 </ul>
 
 **Når en spiller skriver i OOC:**
