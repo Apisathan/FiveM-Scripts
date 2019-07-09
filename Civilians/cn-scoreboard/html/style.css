@@ -1,0 +1,43 @@
+html {
+	color: #fff;
+}
+
+#wrap {
+	width: 300px;
+	margin-top: 75px;
+	margin-left: auto;
+	margin-right: auto;
+    color: rgba(255, 255, 255, 0.9);
+	opacity: 0.9;
+}
+
+table {
+	text-align: left;
+	background-color: #000;
+	border-radius: 20px;
+}
+
+td {
+	padding-left: 10px;
+	padding-right: 25px;
+	font-size: 15px;
+	font-family: 'Segoe Ui';
+}
+
+tr.heading {
+    background-color: #ff6600;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+}
+tr.logo {
+	background-color: transparent;
+}
+tr.footer {
+	height: 50px;
+}
+td.job {
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+}

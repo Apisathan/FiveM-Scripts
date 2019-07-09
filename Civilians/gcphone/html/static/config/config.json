@@ -1,0 +1,301 @@
+{
+  "reseau": " Telenor",
+  "warningMessageCount": 2000,
+  "themeColor": "#303f9f",
+  "colors": [
+    "#EF5350",
+    "#EC407A",
+    "#AB47BC",
+    "#7E57C2",
+    "#5C6BC0",
+    "#42A5F5",
+    "#29B6F6",
+    "#26C6DA",
+    "#26A69A",
+    "#66BB6A",
+    "#9CCC65",
+    "#D4E157",
+    "#FFCA28",
+    "#FFA726",
+    "#FF7043",
+    "#8D6E63",
+    "#78909C"
+  ],
+
+  "useFormatNumberFrance": false,
+
+  "useWebRTCVocal": true,
+  "RTCConfig": {
+    "iceServers": [{
+      "urls": ["turn:51.38.69.127:3478"],
+      "username": "civil",
+      "credential": "34err23wewer23"
+    }]
+  },
+  "background" : {
+	"Custom URL": "URL",
+    "Civilians": "23.png",
+    "Calvin & Hobbes": "back001.jpg",
+    "Destiny": "back002.jpg",
+    "Stormtrooper": "back003.jpg",   
+	"Guitar": "01.jpg",
+    "Los Santos": "02.jpg",
+    "Jagt": "03.jpg",
+    "Franklin": "04.jpg",
+    "Politi": "05.jpg",
+    "Trevor & Michael": "06.jpg",
+    "San Andreas": "07.jpg",
+    "By": "08.jpg",
+    "Skyer og skov": "09.jpg",
+    "Skov": "10.jpg",
+    "Bølge": "11.jpg",
+    "Løve": "12.jpg",
+    "Planet": "13.jpg",
+    "Rose": "14.jpg",
+    "Blå": "15.jpg",
+    "Sort": "16.jpg",
+    "Burn": "17.jpg",
+    "Assassins Creed": "18.jpg",
+    "Stalactite": "19.jpg",
+    "Origin": "20.jpg",
+    "Pacman": "21.jpg"
+  },
+  "background_default": {
+    "label": "Civilians",
+    "value": "23.png"
+  },
+
+
+  "coque": {
+    "Oneplus 6T": "oneplus6t.png",
+    "Samsung S9": "s9.png",
+    "iPhone X": "iphonex.png"
+  },
+  "coque_default": {
+    "label": "Ingen",
+    "value": "Ingen"
+  },
+
+
+  "serviceCall": [
+    {
+      "display": "Politi",
+      "icon": "/html/static/img/icons_app/politi.png",
+      "subMenu": [
+        {
+          "title": "Send en besked",
+          "eventName": "service:call",
+          "type": {
+            "number": "Politi-Job"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Ambulance",
+      "icon": "/html/static/img/icons_app/ambulance.png",
+      "subMenu": [
+        {
+          "title": "Send en besked",
+          "eventName": "service:call",
+          "type": {
+            "number": "EMS-Job"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Kørelærer",
+      "icon": "/html/static/img/icons_app/driverlicense.png",
+      "subMenu": [
+        {
+          "title": "Send en besked",
+          "eventName": "service:call",
+          "type": {
+            "number": "Kørelærer-Job"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Mekaniker",
+      "icon": "/html/static/img/icons_app/mekaniker.png",
+      "subMenu": [
+        {
+          "title": "Send en besked",
+          "eventName": "service:call",
+          "type": {
+            "number": "Mekaniker-Job"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Taxa",
+      "icon": "/html/static/img/icons_app/taxi.png",
+      "subMenu": [
+        {
+          "title": "Send en besked",
+          "eventName": "service:call",
+          "type": {
+            "number": "Taxi"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Advokat",
+      "icon": "/html/static/img/icons_app/advokat.png",
+      "subMenu": [
+        {
+          "title": "Send en besked",
+          "eventName": "service:call",
+          "type": {
+            "number": "Advokat-Job"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Sikkerhedsvagt",
+      "icon": "/html/static/img/icons_app/guard.png",
+      "subMenu": [
+        {
+          "title": "Send en besked",
+          "eventName": "service:call",
+          "type": {
+            "number": "Sikkerhedsvagt-Job"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Ejendomsmægler",
+      "icon": "/html/static/img/icons_app/realestate.png",
+      "subMenu": [
+        {
+          "title": "Send en besked",
+          "eventName": "service:call",
+          "type": {
+            "number": "Ejendomsmægler-Job"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Journalist",
+      "icon": "/html/static/img/icons_app/news.png",
+      "subMenu": [
+        {
+          "title": "Send en besked",
+          "eventName": "service:call",
+          "type": {
+            "number": "Journalist-Job"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Psykolog",
+      "icon": "/html/static/img/icons_app/psykolog.png",
+      "subMenu": [
+        {
+          "title": "Send en besked",
+          "eventName": "service:call",
+          "type": {
+            "number": "Psykolog-Job"
+          }
+        }
+      ]
+    }
+  ],
+  "apps": [
+    {
+      "name": "Telefon",
+      "icons": "/html/static/img/icons_app/call.png",
+      "routeName": "appels",
+      "inHomePage": true
+    },
+    {
+      "name": "Beskeder",
+      "icons": "/html/static/img/icons_app/sms.png",
+      "routeName": "messages",
+      "inHomePage": true,
+      "puceRef": "nbMessagesUnread"
+    },
+    {
+      "name": "Kontakter",
+      "icons": "/html/static/img/icons_app/contacts.png",
+      "routeName": "contacts",
+      "inHomePage": true
+    },
+    {
+      "name": "Indstillinger",
+      "icons": "/html/static/img/icons_app/settings.png",
+      "routeName": "parametre",
+      "inHomePage": true
+    },
+    {
+      "name": "Bank",
+      "icons": "/html/static/img/icons_app/bank.png",
+      "routeName": "bank",
+      "inHomePage": false
+    },
+    {
+      "name": "MobilePay",
+      "icons": "/html/static/img/icons_app/mobilepay.png",
+      "routeName": "mobilepay"
+    },
+    {
+      "name": "Twitter",
+      "icons": "/html/static/img/icons_app/twitter.png",
+      "routeName": "twitter"
+    },
+    {
+      "name": "News",
+      "icons": "/html/static/img/icons_app/news.png",
+      "routeName": "news",
+      "enabled": false
+    },
+    {
+      "name": "Bilbasen",
+      "icons": "/html/static/img/icons_app/bilbasen.png",
+      "routeName": "bilbasen",
+      "enabled": false
+    },
+    {
+      "name": "Kamera",
+      "icons": "/html/static/img/icons_app/photo.png",
+      "routeName": "photo"
+    },
+    {
+      "name": "Aktiekurser",
+      "icons": "/html/static/img/icons_app/bourse.png",
+      "routeName": "bourse",
+      "enabled": false
+    },
+    {
+      "name": "Dark Chat",
+      "icons": "/html/static/img/icons_app/tchat.png",
+      "routeName": "tchat"
+    },
+    {
+      "name": "Noter",
+      "icons": "/html/static/img/icons_app/notes.png",
+      "routeName": "notes",
+      "enabled": false
+    },
+    {
+      "name": "Beregner",
+      "icons": "/html/static/img/icons_app/lommeregner.png",
+      "routeName": "calc",
+      "enabled": true
+    },
+    {
+      "name": "9GAG",
+      "icons": "/html/static/img/icons_app/9gag.png",
+      "routeName": "9gag",
+      "enabled": false
+    }
+  ]
+}

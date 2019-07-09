@@ -1,0 +1,51 @@
+<!--
+
+	ActionMenu - v1.0.1
+	Created by WolfKnight
+	Additional help from lowheartrate, TheStonedTurtle, and Briglair. 
+
+ -->
+
+<html>
+<head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="ui.js" type="text/javascript"></script>
+    <link href="ui.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div id="actionmenu" style="display: none;">
+    <div id="background-menu">
+        <span class="title">Mekaniker</span>
+        <div id="mainmenu">
+            <button class="menuoption" data-sub="engine">Motor</button>
+            <button class="menuoption" data-sub="brakes">Bremser</button>
+            <button class="menuoption" data-sub="transmission">Gearkasse</button>
+            <button class="menuoption" data-sub="turbo">Turbo</button>
+        </div>
+        <div id="turbo" data-parent="mainmenu" style="display: none;">
+            <button class="menuoption" data-action="turbo1">Ingen turbo</button>
+            <button class="menuoption" data-action="turbo2">Turbo</button>
+        </div>
+        <div id="engine" data-parent="mainmenu" style="display: none;">
+            <button class="menuoption" data-action="engine1">Standard Motor</button>
+            <button class="menuoption" data-action="engine2">Chiptuning</button>
+            <button class="menuoption" data-action="engine3">Sport Motor</button>
+            <button class="menuoption" data-action="engine4">Racer Motor</button>
+        </div>
+        <div id="brakes" data-parent="mainmenu" style="display: none;">
+            <button class="menuoption" data-action="brakes1">Standard Bremser</button>
+            <button class="menuoption" data-action="brakes2">Gade Bremser</button>
+            <button class="menuoption" data-action="brakes3">Sport Bremser</button>
+            <button class="menuoption" data-action="brakes4">Racer Bremser</button>
+        </div>
+        <div id="transmission" data-parent="mainmenu" style="display: none;">
+            <button class="menuoption" data-action="transmission1">Standard Gearkasse</button>
+            <button class="menuoption" data-action="transmission2">Gade Gearkasse</button>
+            <button class="menuoption" data-action="transmission3">Sport Gearkasse</button>
+            <button class="menuoption" data-action="transmission4">Racer Gearkasse</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

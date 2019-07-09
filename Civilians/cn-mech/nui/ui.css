@@ -1,0 +1,80 @@
+/*--------------------------------------------------------------------------
+
+    ActionMenu - v1.0.1
+    Created by WolfKnight
+    Additional help from lowheartrate, TheStonedTurtle, and Briglair.  
+
+--------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto.ttf");
+}
+@font-face {
+    font-family: "Captain";
+    src: url("Captain.ttf");
+}
+
+#background-menu {
+    position: absolute;
+    overflow: hidden;
+    background-color: orange;
+}
+.title {
+    margin-top: 5px;
+    font-family: "Captain", sans-serif;
+    font-size: 54px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+#actionmenu {
+    position: relative;
+    left: 0;
+    top: 35%;
+    width: 70%;
+    height: 60%;
+}
+
+#actionmenu div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    max-height: 100%;
+}
+
+#actionmenu button, button:hover, button:active, button:focus {
+    border: none;
+}
+
+#actionmenu button { 
+    border: 1px solid black;
+    background-color: #FFB300;
+    color: black; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 10px 24px; 
+    margin: 5px 15px;
+    cursor: pointer; 
+    width: 250px;
+    display: block; 
+    text-transform: uppercase;
+}
+#actionmenu button:last-child {
+    margin-bottom: 15px;
+}
+
+#actionmenu button:hover {
+    background-color: #FFA000;
+}
+
+#actionmenu button:active {
+    background: #FFA000;
+}
