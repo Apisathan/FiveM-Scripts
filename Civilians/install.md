@@ -270,7 +270,8 @@ function vRP.setLicense(user_id,dmvtest)
 end
 ```
 ###Ændring til driver license
-**vrp_dmvschool - server.lua**  
+**vrp_dmvschool - server.lua**
+- Husk og ændrer alle steder bruger license  
 ```
 RegisterServerEvent("dmv:success")
 AddEventHandler("dmv:success", function()
