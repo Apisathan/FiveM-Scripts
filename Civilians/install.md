@@ -279,3 +279,61 @@ AddEventHandler("dmv:success", function()
     vRP.setLicense({user_id,1})
 end)
 ```
+### Manglende funktionr til gcphone
+**vrp/modules/basic_phone.lua:** 
+```
+function vRP.changeContact(user_id,nphone,number,phone)
+    local data = vRP.getUserDataTable(user_id)
+    if data then
+        if data.phone_directory ~= nil then
+            local phone_directory = data.phone_directory
+            phone_directory[nphone] = number
+            if nphone ~= phone then
+                phone_directory[phone] = nil
+            end
+            data.phone_directory = phone_directory
+        end
+    end
+end
+function vRP.removeContact(user_id,name)
+    local data = vRP.getUserDataTable(user_id)
+    if data then
+        if data.phone_directory ~= nil then
+            local phone_directory = data.phone_directory
+            if phone_directory[name] ~= nil then
+                phone_directory[name] = nil
+                data.phone_directory = phone_directory
+            end
+        end
+    end
+end
+function vRP.addContact(user_id,name,number)
+    local data = vRP.getUserDataTable(user_id)
+    if data then
+        if data.phone_directory ~= nil then
+            local phone_directory = data.phone_directory
+            phone_directory[name] = number
+            data.phone_directory = phone_directory
+        end
+    end
+end
+function vRP.deleteAllContact(user_id)
+    local data = vRP.getUserDataTable(user_id)
+    if data then
+        if data.phone_directory ~= nil then
+            data.phone_directory = {}
+        end
+    end
+end
+-- get directory name by number for a specific user
+function vRP.getPhoneDirectoryName(user_id, phone)
+    local directory = vRP.getPhoneDirectory(user_id)
+    for k,v in pairs(directory) do
+        if v == phone then
+            return k
+        end
+    end
+
+    return "ukendt"
+end
+```
