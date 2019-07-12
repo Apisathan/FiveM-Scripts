@@ -269,3 +269,12 @@ function vRP.setLicense(user_id,dmvtest)
     TriggerEvent("vrp_extended:updatelicense",user_id,dmvtest)
 end
 ```
+###Ændring til driver license
+**vrp_dmvschool - server.lua**  
+```
+RegisterServerEvent("dmv:success")
+AddEventHandler("dmv:success", function()
+    local user_id = vRP.getUserId({source})
+    vRP.setLicense({user_id,1})
+end)
+```
