@@ -1,6 +1,6 @@
-##Install af funktioner
+## Install af funktioner
 
-###Debt system 
+### Debt system 
 **vrp/modules/money.lua:**  
 Kør i databasen: `ALTER TABLE vrp_user_moneys ADD debt int(11) DEFAULT 0 NOT NULL; `
 - Skal tilføjes:  
@@ -128,7 +128,7 @@ function vRP.setBankMoney(user_id,value)
     end
 end
 ```
-###Pis funktion
+### Pis funktion
 **vrp/modules/survival.lua:**  
 - Skal tilføjes:  
 ```
@@ -221,7 +221,7 @@ AddEventHandler("vRP:playerSpawn",function(user_id, source, first_spawn)
     vRP.setHealth(user_id, data.health)
 end)
 ```
-###Manglende funktioner til extended
+### Manglende funktioner til extended
 **vrp/modules/identity.lua:**  
 Kør i database:
 - `UPDATE vrp_users SET DmvTest='1' WHERE DmvTest = 'Passed'`
@@ -269,7 +269,7 @@ function vRP.setLicense(user_id,dmvtest)
     TriggerEvent("vrp_extended:updatelicense",user_id,dmvtest)
 end
 ```
-###Ændring til driver license
+### Ændring til driver license
 **vrp_dmvschool - server.lua**
 - Husk og ændrer alle steder bruger license  
 ```
