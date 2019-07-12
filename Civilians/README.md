@@ -19,6 +19,10 @@ Eftersom Planke, ikke kunne holde til sandheden omkring ham endte det ud i et ba
 - **vrp_extended:** Data til client side, samt mange ekstra ting som npc salg.
 - **vrp_hospital:** Gør så man kan snakke med en npc og ligge sig i en seng og få liv, når læger ikke er online. (Kræver vrp_extended)
 - **vrp_ui:** Healthbar.
+- :new: **wraith_alpr:** Ændret politi scanner til og kunne se om ejeren af bilen har kørekort (Kræver vrp_extended)
+- :new: **banking:** Tilføjet gæld system.
+- :new: **install.md:** En masse funktioner til f.eks. (Pis, Gæld, DriverLicense, samt nogen funktioner extended kræver)
+
 - **InteractSound:** Lyde til de forskellige ting
 
 **Disclaimer:** Der kan nemt have været noget jeg har glemt, så hvis der er nogen problemer så skriv på FDD eller FSH.
