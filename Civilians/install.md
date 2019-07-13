@@ -5,6 +5,14 @@
 Kør i databasen: `ALTER TABLE vrp_user_moneys ADD debt int(11) DEFAULT 0 NOT NULL; `
 - Skal tilføjes:  
 ```
+function vRP.getDebt(user_id)
+    local tmp = vRP.getUserTmpTable(user_id)
+    if tmp then
+        return tmp.debt or 0
+    else
+        return 0
+    end
+end
 function vRP.tryBankPaymentOrDebt(user_id,amount)
     local money = vRP.getBankMoney(user_id)
     if amount > 0 and money >= amount then
