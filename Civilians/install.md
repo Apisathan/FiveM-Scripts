@@ -13,6 +13,7 @@ function vRP.getDebt(user_id)
         return 0
     end
 end
+
 function vRP.tryBankPaymentOrDebt(user_id,amount)
     local money = vRP.getBankMoney(user_id)
     if amount > 0 and money >= amount then
