@@ -1,7 +1,5 @@
 # CiviliansNetwork - Scripts jeg har lavet/redigeret i.
 
-Eftersom Planke, ikke kunne holde til sandheden omkring ham endte det ud i et ban til mig, derfor releaser jeg nu meget af det arbejde jeg har lavet for Civilians, skulle der mangle noget jeg har lavet kan i skrive til mig på FSH eller FDD, også kan jeg uploade det, såfremt det lavet af mig.
-
 ### Indholdsliste:
 - **CN-Customs**: 
     * Mekaniker lift
@@ -24,11 +22,3 @@ Eftersom Planke, ikke kunne holde til sandheden omkring ham endte det ud i et ba
 - :new: **install.md:** En masse funktioner til f.eks. (Pis, Gæld, DriverLicense, samt nogen funktioner extended kræver)
 
 - **InteractSound:** Lyde til de forskellige ting
-
-**Disclaimer:** Der kan nemt have været noget jeg har glemt, så hvis der er nogen problemer så skriv på FDD eller FSH.
-
-**FDD Invite:** https://discord.gg/59Kbggw
-
-**FSH Invite:** https://discord.gg/ubzWY7w
-
-**Sidst men ikke mindst, kan vi så ikke lige få et vote her?** https://www.strawpoll.me/18289029
